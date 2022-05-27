@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+  font-family: Iran;
+  src: url("assets/IRANSansWeb_FaNum.eot");
+  src: url("assets/IRANSansWeb_FaNum.woff");
+  src: url("assets/IRANSansWeb_FaNum.woff2");
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Iran ,  sans-serif !important; min-height: 100vh}
+.mat-typography *{font-family: Iran ,  sans-serif !important; }
+
+
+
+
