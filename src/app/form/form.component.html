@@ -2,6 +2,23 @@
   <div class="container d-flex justify-content-center">
     <div class="col-8">
       <mat-tab-group animationDuration="0" mat-align-tabs="center" class="mainForm border p-3 bg-light shadow rounded">
+        <mat-tab label="ثبت نام">
+          <form class="mt-4">
+            <div class="form-group d-flex flex-column align-content-start">
+              <label class="d-flex">نام</label>
+              <input [(ngModel)]="register.name" name="signUpName" type="text" class="form-control" placeholder="نام و نام خانوادگی">
+            </div>
+            <div class="form-group d-flex flex-column align-content-start">
+              <label class="d-flex">ایمیل</label>
+              <input [(ngModel)]="register.email" name="signUpEmail" type="email" class="form-control" placeholder="نام کاربری">
+            </div>
+            <div class="form-group d-flex flex-column align-content-start">
+              <label class="d-flex">رمز عبور</label>
+              <input [(ngModel)]="register.pass" name="signUpPass" type="password" class="form-control" placeholder="پسورد">
+            </div>
+            <button (click)="registerClick()" type="submit" class="btn btn-primary d-flex mx-auto px-4">ثبت</button>
+          </form>
+        </mat-tab>
         <mat-tab label="ورود">
           <form class="mt-4">
             <div class="form-group d-flex flex-column align-content-start">
@@ -13,23 +30,6 @@
               <input [(ngModel)]="logIn.pass" name="logInPass" type="password" class="form-control" placeholder="پسورد">
             </div>
             <button (click)="logInClick()" type="submit" class="btn btn-primary d-flex mx-auto px-4">ثبت</button>
-          </form>
-        </mat-tab>
-        <mat-tab label="ثبت نام">
-          <form class="mt-4">
-            <div class="form-group d-flex flex-column align-content-start">
-              <label class="d-flex">نام</label>
-              <input [(ngModel)]="signUp.name" name="signUpName" type="text" class="form-control" placeholder="نام و نام خانوادگی">
-            </div>
-            <div class="form-group d-flex flex-column align-content-start">
-              <label class="d-flex">ایمیل</label>
-              <input [(ngModel)]="signUp.email" name="signUpEmail" type="email" class="form-control" placeholder="نام کاربری">
-            </div>
-            <div class="form-group d-flex flex-column align-content-start">
-              <label class="d-flex">رمز عبور</label>
-              <input [(ngModel)]="signUp.pass" name="signUpPass" type="password" class="form-control" placeholder="پسورد">
-            </div>
-            <button (click)="signUpClick()" type="submit" class="btn btn-primary d-flex mx-auto px-4">ثبت</button>
           </form>
         </mat-tab>
       </mat-tab-group>
