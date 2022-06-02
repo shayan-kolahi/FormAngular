@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ConfigService {
   constructor(private http: HttpClient) { }
-  configUrl = 'https://apokar.gmodern.ir/api/1register';
+  configUrl = 'https://apokar.gmodern.ir/api/register';
   getConfig(hero:any){
     return this.http.post<any>(this.configUrl, hero);
   }
